@@ -13,7 +13,7 @@ public class AlunoView {
     
     
     
-    private void run(){
+    public void run(){
         int opcao = -1;
 
         do{
@@ -80,7 +80,7 @@ public class AlunoView {
 
     public AlunoView(){}
     
-    public static void main(String[] args) {
-        new AlunoView().run();
-    }
+//    public static void main(String[] args) {
+//        new AlunoView().run();
+//    }
 }

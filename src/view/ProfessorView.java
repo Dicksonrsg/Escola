@@ -12,19 +12,19 @@ public class ProfessorView {
     
     ProfessorController pc =  new ProfessorController();
     
-    private void run(){
+    public void run(){
         int opcao = -1;
     
          do{
             System.out.print(
-                "==== Professores ===="+
+                "====== Professores ======"+
                 "\n1-Cadastrar"+
                 "\n2-Listar Tudo"+
                 "\n3-Buinputar por Matricula"+
                 "\n4-Editar Professor"+
                 "\n5-Excluir Professor"+
                 "\n0-Sair"+
-                "\n================"+
+                "\n========================="+
                 "\nOpção: ");
         opcao = input.nextInt();
         switch(opcao){
@@ -81,8 +81,8 @@ public class ProfessorView {
     
     public ProfessorView(){}
     
-    public static void main(String[] args) {
-        new ProfessorView().run();
-    }
+//    public static void main(String[] args) {
+//        new ProfessorView().run();
+//    }
 
 }
