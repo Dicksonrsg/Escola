@@ -12,6 +12,7 @@ public class Principal {
     AlunoView av = new AlunoView();
  
     ProfessorView pv = new ProfessorView();
+    TurmaView tv = new TurmaView();
     
     
     do{
@@ -19,6 +20,7 @@ public class Principal {
             "\nA-Menu Alunos."+
             "\nP-Menu Professor."+
             "\nS-Sair"+
+            "\nT-Turma"+
             "\nOpção: ");
         call = input.next().charAt(0);
     switch(call){
@@ -27,6 +29,9 @@ public class Principal {
             break;
         case 'P': case 'p':
             pv.run();
+            break;
+        case 'T': case 't':
+            tv.run();
             break;
         case 'S': case 's':
             call = 'S';
