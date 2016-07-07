@@ -1,50 +1,36 @@
 
 package model;
 
-public class Professor {
+import controller.Persiste;
+
+public class Professor extends Pessoa implements Persiste{
     
     private int matricula;
-    private String nome;
-    private int idade;
-    private String disciplina;
+    private String Disciplina;
 
+
+    @Override
     public int getMatricula() {
         return matricula;
     }
 
+    @Override
     public void setMatricula(int matricula) {
         this.matricula = matricula;
     }
 
-    public String getNome() {
-        return nome;
+    public String getDisciplina() {
+        return Disciplina;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public int getIdade() {
-        return idade;
-    }
-
-    public void setIdade(int idade) {
-        this.idade = idade;
+    public void setDisciplina(String Disciplina) {
+        this.Disciplina = Disciplina;
     }
 
     @Override
     public String toString() {
-        return "Professor{" + "matricula=" + matricula + ", nome=" + nome + ", idade=" + idade + ", disciplina=" + disciplina + '}';
-    }
-
-    public String getDisciplina() {
-        return disciplina;
-    }
-
-    public void setDisciplina(String disciplina) {
-        this.disciplina = disciplina;
+        return "Professor{" + "matricula=" + matricula + ", nome="+ nome+ ", idade="+ idade + ", sexo="+ sexo + Disciplina + '}';
     }
     
- 
     
 }

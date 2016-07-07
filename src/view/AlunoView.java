@@ -31,12 +31,12 @@ public class AlunoView {
         switch(opcao){
             case 1:
                 Aluno aluno =  new Aluno();
-                System.out.print("Matricula: ");
-                aluno.setMatricula(sc.nextInt());
                 System.out.print("Nome: ");
                 aluno.setNome(sc.next());
                 System.out.print("Idade: ");
                 aluno.setIdade(sc.nextInt());
+                System.out.print("Sexo: ");
+                aluno.setSexo(sc.next());
                 ac.create(aluno);
                 break;
             case 2:
@@ -62,6 +62,8 @@ public class AlunoView {
                     aluno.setNome(sc.next());
                     System.out.print("Nova Idade: ");
                     aluno.setIdade(sc.nextInt());
+                    System.out.print("Sexo: ");
+                    aluno.setSexo(sc.next());                    
                     ac.update(aluno);
                 }
                 break;
@@ -80,7 +82,4 @@ public class AlunoView {
 
     public AlunoView(){}
     
-//    public static void main(String[] args) {
-//        new AlunoView().run();
-//    }
 }

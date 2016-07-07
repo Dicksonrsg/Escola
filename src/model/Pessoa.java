@@ -3,9 +3,9 @@ package model;
 
 public abstract class Pessoa {
     
-    private String nome;
-    private int idade;
-    private String sexo;
+    String nome;
+    int idade;
+    String sexo;
 
     public String getNome() {
         return nome;

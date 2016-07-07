@@ -20,7 +20,7 @@ public class ProfessorView {
                 "====== Professores ======"+
                 "\n1-Cadastrar"+
                 "\n2-Listar Tudo"+
-                "\n3-Buinputar por Matricula"+
+                "\n3-Buscar por Matricula"+
                 "\n4-Editar Professor"+
                 "\n5-Excluir Professor"+
                 "\n0-Sair"+
@@ -30,12 +30,12 @@ public class ProfessorView {
         switch(opcao){
             case 1:
                 Professor professor =  new Professor();
-                System.out.print("Matricula: ");
-                professor.setMatricula(input.nextInt());
                 System.out.print("Nome: ");
                 professor.setNome(input.next());
                 System.out.print("Idade: ");
                 professor.setIdade(input.nextInt());
+                System.out.print("Sexo: ");
+                professor.setSexo(input.next());                
                 System.out.print("Disciplina: ");
                 professor.setDisciplina(input.next());
                 pc.create(professor);
@@ -63,6 +63,10 @@ public class ProfessorView {
                     professor.setNome(input.next());
                     System.out.print("Nova Idade: ");
                     professor.setIdade(input.nextInt());
+                    System.out.print("Sexo: ");
+                    professor.setSexo(input.next());
+                    professor.setSexo(input.next());                
+                    System.out.print("Disciplina: ");                    
                     pc.update(professor);
                 }
                 break;
@@ -80,9 +84,4 @@ public class ProfessorView {
     }
     
     public ProfessorView(){}
-    
-//    public static void main(String[] args) {
-//        new ProfessorView().run();
-//    }
-
 }
